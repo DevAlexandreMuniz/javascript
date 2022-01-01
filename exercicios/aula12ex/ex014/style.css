@@ -13,7 +13,8 @@ header {
 section {
     background: white;
     border-radius: 10px;
-    width: 500px;
+    max-width: 500px;
+    min-width: 200px;
     padding: 15px;
     margin: auto;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.363);
@@ -23,8 +24,22 @@ div#msg {
     text-align: center;
 }
 
+img#imagem {
+    display: block;
+    margin: auto;
+}
+
 footer{
-    color: white;
     text-align: center;
     font-style: italic;
+}
+
+p > a {
+    text-decoration: none;
+    color: white;
+}
+
+p > a:hover {
+    text-decoration: underline;
+    color: rgb(168, 168, 168);
 }
