@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 body {
-    background: rgb(70, 142, 236);
+    background: #D1BF91;
     font: normal 15pt Arial;
 }
 
 header {
-    color: white;
+    color: #60371E;
     text-align: center;
 }
 
@@ -21,17 +21,17 @@ section {
 }
 
 footer{
-    color: white;
+    color: #60371E;
     text-align: center;
     font-style: italic;
 }
 
 p > a {
     text-decoration: none;
-    color: white;
+    color: #60371E;
 }
 
 p > a:hover {
     text-decoration: underline;
-    color: rgb(168, 168, 168);
+    color: #A6341B;
 }
