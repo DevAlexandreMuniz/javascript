@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+    background: #F2EFEB;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: #453261;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    max-width: 500px;
+    min-width: 200px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.363);
+}
+
+select#flista{
+    width: 150px;
+}
+
+footer{
+    color: #453261;
+    text-align: center;
+    font-style: italic;
+}
+
+p > a {
+    text-decoration: none;
+    color: #453261;
+}
+
+p > a:hover {
+    text-decoration: underline;
+    color: #3B3F42;
+}
