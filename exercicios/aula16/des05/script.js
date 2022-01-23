@@ -3,7 +3,7 @@ let lista = document.getElementById('flista')
 let res = document.getElementById('res')
 let valores = []
 
-function meunumero(n) {
+function adicionarnumero(n) {
     if (Number(n) >= 1 && Number(n) <= 100){
         return true
     } else {
@@ -11,7 +11,7 @@ function meunumero(n) {
     }
 }
 
-function minhalista(n, v) {
+function adicionaralista(n, v) {
     if (v.indexOf(Number(n)) == -1){
         return true
     } else {
@@ -20,7 +20,7 @@ function minhalista(n, v) {
 }
 
 function adicionar() {
-    if (meunumero(num.value) && minhalista(num.value, valores)) {
+    if (adicionarnumero(num.value) && adicionaralista(num.value, valores)) {
         valores.push(Number(num.value))
         let item = document.createElement('option')
         item.text = `valor ${num.value} adicionado`
@@ -37,7 +37,7 @@ function finalizar() {
     if (valores.length == 0){
         alert('Adicione valores antes de finalizar!')
     } else {
-        let tot = valores.length
+        let total = valores.length
         let maior = valores[0]
         let menor = valores[0]
         let soma = 0
@@ -51,9 +51,9 @@ function finalizar() {
                 menor = valores[pos]
             ]
         }
-        media = soma / tot
+        media = soma / total
         res.innerHTML = ''
-        res.innerHTML += `<p>Ao todo temos ${tot} números cadastrados</p>`
+        res.innerHTML += `<p>Ao todo temos ${total} números cadastrados</p>`
         res.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
         res.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
         res.innerHTML += `<p>Somando todos os valores temos ${soma}</p>`
